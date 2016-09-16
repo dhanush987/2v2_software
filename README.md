@@ -1,4 +1,4 @@
-# ${1:BrainBench 2vs2 software package}
+# $BrainBench 2vs2 software package
 This software package is used for evaluation of word vectors. The online service of BrainBench and the paper can be found here:
 http://www.langlearnlab.cs.uvic.ca/brainbench/
 ## Installation
