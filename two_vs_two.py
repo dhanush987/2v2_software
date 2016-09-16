@@ -170,12 +170,13 @@ def run_test (input_file):
 	fMRI_score = get_fMRI_average(input_mat, mask, length)
 	MEG_score = get_MEG_average(input_mat, mask, length)
 
-	return [fMRI_score, MEG_score]
+	return [fMRI_score, MEG_score, length]
 
 def main():
 	scores = run_test(open(sys.argv[1], 'r'))
-	print scores[0]
-	print scores[1]
+	print "There are %d words found in BrainBench from the input" % scores[2]
+	print "The fMRI score is %f" % scores[0]
+	print "The MEG score is %f" % scores[1]
 
 if __name__ == "__main__":
     main()
